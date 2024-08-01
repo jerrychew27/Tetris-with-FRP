@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>FIT2102 A1 2023</title>
+  </head>
+  <body>
+    <h1>Tetris</h1>
+    <main id="main" class="flex row">
+      <svg id="svgCanvas">
+        <!-- game over text box -->
+        <g id="gameOver" visibility="hidden">
+          <rect x="26" y="120" fill="white" height="48" width="149"></rect>
+          <text x="36" y="150">Game Over</text>
+        </g>
+      </svg>
+      <div id="sideBar" class="flex col">
+        <svg id="svgPreview"></svg>
+        <div id="info" class="flex col">
+          <div class="text">
+            <span class="left">Level: </span>
+            <span class="right" id="levelText">...</span>
+          </div>
+          <div class="text">
+            <span class="left">Score: </span>
+            <span class="right" id="scoreText">...</span>
+          </div>
+          <div class="text">
+            <h2> <font size = "-1">
+              Instructions:</h2>
+            <p> 
+              <font size = "-2">
+              Clear rows to increase your score!</p>
+            <p> Difficulty will increase for every 500 points scored!</p>
+            <p> W key: rotate 
+            <p> A key: move left
+            <p> S key: move down
+            <p> D key: move right
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>

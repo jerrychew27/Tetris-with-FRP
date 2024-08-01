@@ -1,1 +1,1 @@
-# Tetris-with-FRP
+Tetris game created with Functional Reactive Programming coded in TypeScript programming language.
